@@ -340,13 +340,13 @@ a:active {
   display: flex;
   justify-content: flex-end;
 }
-.trail .button {
+.button {
   background-color: #212121;
   padding: 1rem;
   border-radius: 40px 5px;
   display: inline-block;
 }
-.trail .button h1 {
+.button h1 {
   font-size: 2rem;
   margin-bottom: 0;
 }
@@ -470,6 +470,7 @@ input[type="range"]::-webkit-slider-thumb {
 .about .subtitle {
   font-size: 1.5rem;
   color: #14FFEC;
+  padding-bottom: 1rem;
 }
 .about .content {
   width: 90%;
@@ -491,15 +492,16 @@ input[type="range"]::-webkit-slider-thumb {
 }
 .team {
   padding: 2rem;
-  padding-left: 5rem;
+  padding-left: 0rem;
 }
 .carousel {
-  width: 50rem;
+  width: 60rem;
 }
 .carousel-inner {
   background: black;
   border: 5px solid white;
   border-radius: 50px 10px;
+  width: 60rem;
 }
 .carousel-item img {
   height: 30rem;
@@ -512,6 +514,65 @@ input[type="range"]::-webkit-slider-thumb {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+.contact .title {
+  padding-bottom: 2rem;
+}
 .contact h1 {
   font-size: 4rem;
+  text-align: center;
+}
+.contact .content {
+  background-color: #323232;
+  width: 100%;
+  padding-top: 2rem;
+}
+
+.contact .content .title h1 {
+  text-align: left;
+  font-size: 2.5rem;
+  padding-left: 5rem;
+}
+.contact .content .subtitle p {
+  text-align: left;
+  padding-left: 5rem;
+}
+.contact .discord .wrapper {
+  padding: 2rem;
+  background-color: #0D7377;
+  border: 2px solid white;
+  border-radius: 50px 10px;
+}
+.discordframe {
+  width: 100%;
+  min-width: 300px;
+  height: 400px;
+}
+.contact .logo img {
+  height: 300px;
+}
+.contact .writeus .wrapper {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact .writeus .message {
+  width: 80%;
+  background-color: #0D7377;
+  padding: 2rem;
+  padding-bottom: 0.5rem;
+  border: 2px solid white;
+  border-radius: 50px 10px;
+}
+.message .title h1 {
+  padding-left: 1rem;
+}
+.contact .form form {
+  display: block;
+}
+.form textarea {
+  resize: none;
+}
+.form .trail .button h1 {
+  font-size: 1.5rem;
 }
