@@ -150,7 +150,7 @@ var selectMap = ['#rank', '#win', '#t', '#p', '#sr'];
 function checkQueue(target) {
   if (target == 'rank') {
     if ( $('#rank3').find('option:selected').val() == 0 ) {
-      $("#pwb").attr('checked', false);
+      $("#pwb").prop('checked', false);
       $("#pwb").attr('disabled', true);
     } else {
       $("#pwb").removeAttr('disabled');
@@ -158,7 +158,7 @@ function checkQueue(target) {
   }
   if (target == 'win') {
     if ( $('#win3').find('option:selected').val() == 0 ) {
-      $("#pwb").attr('checked', false);
+      $("#pwb").prop('checked', false);
       $("#pwb").attr('disabled', true);
     } else {
       $("#pwb").removeAttr('disabled');
@@ -166,7 +166,7 @@ function checkQueue(target) {
   }
   if (target == 't') {
     if ( $('#t2').find('option:selected').val() == 0 ) {
-      $("#pwb").attr('checked', false);
+      $("#pwb").prop('checked', false);
       $("#pwb").attr('disabled', true);
     } else {
       $("#pwb").removeAttr('disabled');
@@ -174,7 +174,7 @@ function checkQueue(target) {
   }
   if (target == 'p') {
     if ( $('#p3').find('option:selected').val() == 0 ) {
-      $("#pwb").attr('checked', false);
+      $("#pwb").prop('checked', false);
       $("#pwb").attr('disabled', true);
     } else {
       $("#pwb").removeAttr('disabled');
@@ -182,7 +182,7 @@ function checkQueue(target) {
   }
   if (target == 'sr') {
     if ( $('#sr3').find('option:selected').val() == 0 ) {
-      $("#pwb").attr('checked', false);
+      $("#pwb").prop('checked', false);
       $("#pwb").attr('disabled', true);
     } else {
       $("#pwb").removeAttr('disabled');
@@ -329,7 +329,7 @@ function calculatePrice() {
   playwithbooster = $("#pwb").is(":checked");
 
   // Price
-  if (playwithbooster == true) {
+  if (playwithbooster == true && queue != 0) {
     console.log("pwb = " + (price * 40 / 100))
     price += price * 40 / 100;
   }
@@ -351,7 +351,7 @@ $("select").on('change', () => {
 // Check when queue is 1v1
 $(".queue").on('change', (event) => {
   if (event.target.value == 0) {
-    $("#pwb").attr('checked', false);
+    $("#pwb").prop('checked', false);
     $("#pwb").attr('disabled', true);
   } else {
     $("#pwb").removeAttr('disabled');
