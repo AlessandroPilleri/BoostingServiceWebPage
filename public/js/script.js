@@ -147,6 +147,49 @@ maps[4].set('21', 10); // SSL
 
 var selectMap = ['#rank', '#win', '#t', '#p', '#sr'];
 
+function checkQueue(target) {
+  if (target == 'rank') {
+    if ( $('#rank3').find('option:selected').val() == 0 ) {
+      $("#pwb").attr('checked', false);
+      $("#pwb").attr('disabled', true);
+    } else {
+      $("#pwb").removeAttr('disabled');
+    }
+  }
+  if (target == 'win') {
+    if ( $('#win3').find('option:selected').val() == 0 ) {
+      $("#pwb").attr('checked', false);
+      $("#pwb").attr('disabled', true);
+    } else {
+      $("#pwb").removeAttr('disabled');
+    }
+  }
+  if (target == 't') {
+    if ( $('#t2').find('option:selected').val() == 0 ) {
+      $("#pwb").attr('checked', false);
+      $("#pwb").attr('disabled', true);
+    } else {
+      $("#pwb").removeAttr('disabled');
+    }
+  }
+  if (target == 'p') {
+    if ( $('#p3').find('option:selected').val() == 0 ) {
+      $("#pwb").attr('checked', false);
+      $("#pwb").attr('disabled', true);
+    } else {
+      $("#pwb").removeAttr('disabled');
+    }
+  }
+  if (target == 'sr') {
+    if ( $('#sr3').find('option:selected').val() == 0 ) {
+      $("#pwb").attr('checked', false);
+      $("#pwb").attr('disabled', true);
+    } else {
+      $("#pwb").removeAttr('disabled');
+    }
+  }
+}
+
 //Create your boost: Modality 
 function replace(target) {
   var options = document.getElementsByClassName('option');
@@ -162,6 +205,8 @@ function replace(target) {
   document.getElementById(target + 'card').style.borderWidth = "3px";
   document.getElementById(target + 'card').style.borderColor = "#14FFEC";
   //document.getElementById(target + 'card').style.backgroundColor = "#0D7377";
+
+  checkQueue(target);
 }
 replace('rank'); // default
 
@@ -301,6 +346,16 @@ $(".update").click(() => {
 })
 $("select").on('change', () => {
   calculatePrice();
+})
+
+// Check when queue is 1v1
+$(".queue").on('change', (event) => {
+  if (event.target.value == 0) {
+    $("#pwb").attr('checked', false);
+    $("#pwb").attr('disabled', true);
+  } else {
+    $("#pwb").removeAttr('disabled');
+  }
 })
 
 /**
