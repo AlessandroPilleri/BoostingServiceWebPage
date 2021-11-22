@@ -509,10 +509,150 @@ input[type="range"]::-webkit-slider-thumb {
   -webkit-filter: blur(1px);
   opacity: 0.6;
 }
-.contact {
+.social {
   background-color: #212121;
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+.social .title {
+  padding-bottom: 2rem;
+}
+.social .content .title {
+  padding-bottom: 2rem;
+  display: flex;
+}
+.social h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+.social .title img {
+  width: 100px;
+}
+.social .content {
+  background-color: #323232;
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.social .content .title h1 {
+  text-align: left;
+  font-size: 2.5rem;
+  padding-left: 5rem;
+}
+.social .content .subtitle p {
+  text-align: left;
+  padding-left: 5rem;
+}
+.social .wrapper {
+  padding: 2rem;
+  background-color: #0D7377;
+  border: 2px solid white;
+  border-radius: 50px 10px;
+}
+.social .divider {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 0;
+  width: 80%;
+  height: 20px;
+}
+.social .right {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.discordframe {
+  width: 100%;
+  min-width: 300px;
+  height: 400px;
+}
+.social .tiktok, .social .twitch, .social .email {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 1rem;
+}
+.social .tiktok .wrapper {
+  display: inline-block;
+}
+.social .tiktok .title {
+  padding-bottom: 0;
+}
+.social .tiktok .title h1 {
+  padding-left: 1rem;
+}
+.social .tiktok .title a {
+  color: white;
+}
+/*
+.social .writeus {
+  background-color: #0D7377;
+  margin-top: 3rem;
+}
+.social .writeus .wrapper {
+  padding: 0;
+  background: none;
+  border: 0px;
+}
+.social .writeus .message {
+  width: 100%;
+  background-color: #0D7377;
+  padding: 2rem;
+  padding-bottom: 0.5rem;
+}
+*/
+.message .title {
+  padding-bottom: 1rem;
+}
+.message .title h1 {
+  padding-left: 1rem !important;
+  padding-right: 1rem;
+}
+.message .title img {
+  width: 50px;
+  height: 50px;
+}
+.message .subtitle p {
+  padding-left: 0rem !important;
+}
+.social .form form {
+  display: block;
+}
+.form textarea {
+  resize: none;
+}
+.form .trail .button h1 {
+  font-size: 1.5rem;
+}
+.social .twitch .wrapper {
+  display: inline-block;
+}
+.social .twitch .title h1 {
+  padding-left: 1rem;
+  padding-right: 1.5rem;
+}
+.social .twitch .title img {
+  width: 50px;
+}
+.social .twitch a {
+  color: white;
+}
+.social .email .wrapper {
+  display: inline-block;
+}
+.social .email .title h1 {
+  padding-left: 1rem;
+  padding-right: 1.5rem;
+}
+.social .email .title img {
+  width: 60px;
+}
+.social .email a {
+  color: white;
+}
+.contact {
+  background-color: #212121;
+  padding-bottom: 1rem;
 }
 .contact .title {
   padding-bottom: 2rem;
@@ -522,57 +662,64 @@ input[type="range"]::-webkit-slider-thumb {
   text-align: center;
 }
 .contact .content {
-  background-color: #323232;
-  width: 100%;
-  padding-top: 2rem;
-}
-
-.contact .content .title h1 {
-  text-align: left;
-  font-size: 2.5rem;
-  padding-left: 5rem;
-}
-.contact .content .subtitle p {
-  text-align: left;
-  padding-left: 5rem;
-}
-.contact .discord .wrapper {
-  padding: 2rem;
   background-color: #0D7377;
-  border: 2px solid white;
-  border-radius: 50px 10px;
-}
-.discordframe {
   width: 100%;
-  min-width: 300px;
-  height: 400px;
-}
-.contact .logo img {
-  height: 300px;
-}
-.contact .writeus .wrapper {
   padding: 2rem;
+}
+.contact .content .title {
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
-.contact .writeus .message {
-  width: 80%;
-  background-color: #0D7377;
-  padding: 2rem;
-  padding-bottom: 0.5rem;
-  border: 2px solid white;
-  border-radius: 50px 10px;
-}
-.message .title h1 {
+.contact .content .title img {
   padding-left: 1rem;
+  width: 100px;
 }
-.contact .form form {
-  display: block;
+.contact .submit {
+  display: flex;
+  justify-content: flex-end;
 }
-.form textarea {
-  resize: none;
+.contact .submit .button h1 {
+  font-size: 2rem;
 }
-.form .trail .button h1 {
-  font-size: 1.5rem;
+.sitetrail {
+  background-color: #212121;
+}
+.sitetrail img {
+  width: 50px;
+}
+.sitetrail .content .col-12 {
+  padding-bottom: 1rem;
+  font-size: 1.2rem;
+}
+.sitetrail a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+.sitetrail a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+.sitetrail a:hover {
+  color: #14FFEC;
+  background-color: transparent;
+  text-decoration: underline;
+}
+.sitetrail a:active {
+  background-color: #14FFEC;
+  background-color: transparent;
+  text-decoration: underline;
+}
+.website {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  font-size: 1rem;
+}
+.reference {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  font-size: 1rem;
+  color: #ccc;
 }

@@ -299,6 +299,9 @@ calculatePrice();
 $(".update").click(() => {
   calculatePrice();
 })
+$("select").on('change', () => {
+  calculatePrice();
+})
 
 /**
  * Send checkout
