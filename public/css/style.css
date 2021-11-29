@@ -63,6 +63,7 @@ a:active {
   padding: 0;
   min-width: 100%;
   min-height: 100%;
+  overflow: hidden;
   z-index: -1;
 }
 .navbar {
@@ -101,6 +102,9 @@ a:active {
   background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
 }
+.websitetitle {
+  width: 90%;
+}
 #home .title {
   position: absolute;
   top: 0;
@@ -118,13 +122,65 @@ a:active {
   justify-content: center;
   align-items: center;
 }
-#home h1 {
-  padding-top: 1rem;
-  font-size: 20rem;
+#home {
   font-family: 'GoGoPosterPunch';
-  letter-spacing: 2px;
-  line-height: 30vh;
+}
+#home h1 {
+  font-size: 5rem;
+  font-family: 'GoGoPosterPunch';
   margin: 0;
+  text-shadow: 5px 5px rgba(0, 0, 0, 0.4);
+}
+#home .content .wrapper {
+  width: 90%;
+  height: 85%;
+  position: absolute;
+  top: 12%;
+}
+.boostinghouse1 , .boostinghouse4 {
+  width: 40%;
+}
+.boostinghouse2 h1, .boostinghouse3 h1 {
+  font-size: 18rem !important;
+}
+.color1 {
+  color: #14FFEC;
+}
+.color2 {
+  color: #212121;
+}
+.titlewrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.boostinghouse3 {
+  height: 220px;
+}
+.boostinghouse3 h1 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.boostinghouse1 {
+  position: absolute;
+  left: 0;
+  top: 8%;
+}
+.boostinghouse4 {
+  position: absolute;
+  right: 0;
+  bottom: 5%;
+}
+.boostinghouse1 .divider, .boostinghouse4 .divider {
+  margin-top: 0;
+  margin-left: 0;
+  width: 60%;
+}
+.boostinghouse4 .divider {
+  margin-top: 0.6rem;
+  float: right;
 }
 .offerings {
   background-color: #212121;
