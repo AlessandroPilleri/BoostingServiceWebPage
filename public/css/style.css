@@ -415,8 +415,11 @@ a:active {
   padding: 1rem;
   border-radius: 40px 5px;
   display: inline-block;
+  border: 3px solid white;
+  border-color: #14FFEC;
 }
 .button h1 {
+  color: white;
   font-size: 2rem;
   margin-bottom: 0;
 }
@@ -752,6 +755,10 @@ input[type="range"]::-webkit-slider-thumb {
   justify-content: flex-end;
 }
 .contact .submit .button h1 {
+  font-size: 2rem;
+  color: white;
+}
+.contact .modal .modal-title {
   font-size: 2rem;
 }
 .sitetrail {

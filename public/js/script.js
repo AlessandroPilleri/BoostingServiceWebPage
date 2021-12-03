@@ -443,3 +443,15 @@ function checkout() {
 $('#checkoutbutton').click(() => {
   checkout();
 })
+
+$('#directmessage').click(() => {
+  var username = $('#name').val();
+  var message = $('#message').val();
+  axios.post('/message', {
+    "username": username,
+    "message": message
+  })
+  .then((res) => {
+    console.log(res);
+  })
+})

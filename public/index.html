@@ -467,9 +467,9 @@
               </div>
               <div class="divider"></div>
               <div class="trail">
-                <div class="button" data-toggle="modal" data-target="#checkoutmodal">
+                <button class="button" data-toggle="modal" data-target="#checkoutmodal">
                   <h1>BOOST NOW</h1>
-                </div>
+                </button>
               </div>
             </div>
           </div>
@@ -509,7 +509,7 @@
                   you can track your orded or ask any other question using the specific text channels.</p>
               </div>
               <div class="modal-footer">
-                <button class="btn btn-secondary">Join our Discord</button>
+                <a href="https://discord.gg/k9mc2DkNfy"><button class="btn btn-secondary">Join our Discord</button></a>
                 <button class="btn btn-primary" data-dismiss="modal">OK</button>
               </div>
             </div>
@@ -770,8 +770,24 @@
           </div>
         </form>
         <div class="submit">
-          <div class="button">
+          <button id="directmessage" class="button" data-toggle="modal" data-target="#messagemodal">
             <h1>Send message</h1>
+          </button>
+        </div>
+        <div id="messagemodal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title">Message Sent!</h1>
+              </div>
+              <div class="modal-body">
+                <p>You're message has been sent to our boosters. You will be contacted as soon as possible.</p>
+              </div>
+              <div class="modal-footer">
+                <a href="https://discord.gg/k9mc2DkNfy"><button class="btn btn-secondary">Join our Discord</button></a>
+                <button class="btn btn-primary" data-dismiss="modal">OK</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

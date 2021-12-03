@@ -26,6 +26,11 @@ app.post('/checkout', (req, res) => {
     res.sendStatus(200);
     bot.channels.cache.get('906565943650570260').send(check.parseMessage(req.body));
 })
+app.post('/message', (req, res) => {
+    console.log(req.body);
+    res.sendStatus(200);
+    bot.channels.cache.get('913099957123297322').send(check.parseMessage(req.body));
+})
 
 /**
  * Bot callbacks
