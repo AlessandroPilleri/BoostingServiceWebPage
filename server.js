@@ -13,10 +13,13 @@ const { Client, Intents } = require('discord.js');
 const bot = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
 //const bot = new Discord.Client();
 const TOKEN = process.env.TOKEN;
-const port = process.env.PORT || 8080
+const port = process.env.PORT || 5050
 
 const Checkout = require('./checkout.js');
 var check = new Checkout();
+
+const Message = require('./message.js');
+var message = new Message();
 
 /**
  * Server callbacks
@@ -29,7 +32,7 @@ app.post('/checkout', (req, res) => {
 app.post('/message', (req, res) => {
     console.log(req.body);
     res.sendStatus(200);
-    bot.channels.cache.get('913099957123297322').send(check.parseMessage(req.body));
+    bot.channels.cache.get('913099957123297322').send(message.parseMessage(req.body));
 })
 
 /**
