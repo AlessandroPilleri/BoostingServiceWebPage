@@ -344,15 +344,36 @@ calculatePrice();
 $(".update").click(() => {
   calculatePrice();
 })
-$("select").on('change', () => {
-  calculatePrice();
-})
+
 $(".currentrank").on('change', (event) => {
   if (modality == 0) {
-    $('#rank2 option')
+    var currentrank = parseInt( $("#rank1").find("option:selected").val() );
+    var desiredrank = parseInt( $("#rank2").find("option:selected").val() );
+    
+    console.log(currentrank, desiredrank)
+
+    if (desiredrank <= currentrank) {
+      $('#rank2 option')
       .removeAttr('selected')
-      .filter('[value=' + (parseInt(event.target.value) + 1) +']')
+      .filter('[value=' + (currentrank + 1) +']')
       .attr('selected', true);
+    }
+  }
+  calculatePrice();
+})
+$(".desiredrank").on('change', (event) => {
+  if (modality == 0) {
+    var currentrank = parseInt( $("#rank1").find("option:selected").val() );
+    var desiredrank = parseInt( $("#rank2").find("option:selected").val() );
+    
+    console.log(currentrank, desiredrank)
+
+    if (desiredrank <= currentrank) {
+      $('#rank1 option')
+      .removeAttr('selected')
+      .filter('[value=' + (desiredrank - 1) +']')
+      .attr('selected', true);
+    }
   }
   calculatePrice();
 })
@@ -365,6 +386,7 @@ $(".queue").on('change', (event) => {
   } else {
     $("#pwb").removeAttr('disabled');
   }
+  calculatePrice()
 })
 
 /**

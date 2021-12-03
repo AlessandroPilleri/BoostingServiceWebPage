@@ -57,16 +57,19 @@ a:active {
 }
 .video-container {
   overflow: hidden;
+  position: absolute;
+  height: 100vh;
+  z-index: -1;
+  width: 100%;
 }
 #video {
-  position: absolute;
   top: 0;
   left: 0;
   margin: 0;
   padding: 0;
   min-width: 100%;
   min-height: 100%;
-  z-index: -1;
+  overflow: hidden;
 }
 .navbar {
   background-color: #212121;
