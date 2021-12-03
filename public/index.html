@@ -1,86 +1,92 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 
 
-    <!-- Meta data -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="HandheldFriendly" content="true">
-    <title>Boosting House</title>
-  </head>
-  <body data-spy="scroll" data-target=".navbar">
+  <!-- Meta data -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="HandheldFriendly" content="true">
+  <title>Boosting House</title>
+</head>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="./img/Logo_bh.png" alt="brand">
-          <h1 class="title">Boosting House</h1>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item"  data-toggle="collapse" data-target=".navbar-collapse.show">
-              <a class="nav-link anchor" href="#home">Home</a>
-            </li>
-            <li class="nav-item dropdown"  data-toggle="collapse" data-target=".navbar-collapse.show">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Boosting</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a href="#offerings" class="dropdown-item">Offerings</a>
-                <a href="#boost" class="dropdown-item">Create your boost</a>
-              </div>
-            </li>
-            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-              <a class="nav-link anchor" href="#about">About us</a>
-            </li>
-            <li class="nav-item"  data-toggle="collapse" data-target=".navbar-collapse.show">
-              <a class="nav-link anchor" href="#social">Socials</a>
-            </li>
-            <li class="nav-item"  data-toggle="collapse" data-target=".navbar-collapse.show">
-              <a class="nav-link anchor" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
+<body data-spy="scroll" data-target=".navbar">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./img/Logo_bh.png" alt="brand" style="padding-left: 1rem;">
+        <h1 class="title">Boosting House</h1>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        style="margin-right: 1rem;">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+            <a class="nav-link anchor" href="#home">Home</a>
+          </li>
+          <li class="nav-item dropdown" data-toggle="collapse" data-target=".navbar-collapse.show">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+              data-toggle="dropdown">Boosting</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a href="#offerings" class="dropdown-item">Offerings</a>
+              <a href="#boost" class="dropdown-item">Create your boost</a>
+            </div>
+          </li>
+          <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+            <a class="nav-link anchor" href="#about">About us</a>
+          </li>
+          <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+            <a class="nav-link anchor" href="#social">Socials</a>
+          </li>
+          <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+            <a class="nav-link anchor" href="#contact">Contact</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <!-- Home -->
+  <!-- Home -->
+  <div class="video-container">
     <video src="./img/Videobg.m4v" autoplay muted loop preload disablePictureInPicture id="video"></video>
-    <div id="home" class="row" style="height: 100vh;">
-      <div class="filter" style="height: 100vh;">
-        <div class="container-fluid websitetitle d-flex h-100 align-items-center justify-content-center">
-          <div class="row justify-content-center align-self-center" style="width: 100%; height: 100%;">
-            <div class="col-12 content d-flex justify-content-center align-items-center">
-              <div class="wrapper">
-                <div class="boostinghouse1">
-                  <div class="divider"></div>
-                  <h1 class="color1">Get your</h1>
+  </div>
+  <div id="home" class="row" style="height: 100vh;">
+    <div class="filter" style="height: 100vh;">
+      <div class="container-fluid websitetitle d-flex h-100 align-items-center justify-content-center">
+        <div class="row justify-content-center align-self-center" style="width: 100%; height: 100%;">
+          <div class="col-12 content d-flex justify-content-center align-items-center">
+            <div class="wrapper">
+              <div class="boostinghouse1">
+                <div class="divider"></div>
+                <h1 class="color1">Get your</h1>
+              </div>
+              <div class="titlewrapper">
+                <div class="boostinghouse2">
+                  <h1 class="text-center color1">Boost<span class="color2">ing</span></h1>
                 </div>
-                <div class="titlewrapper">
-                  <div class="boostinghouse2">
-                    <h1 class="text-center color1">Boost<span class="color2">ing</span></h1>
-                  </div>
-                  <div class="boostinghouse3">
-                    <h1 class="text-center color2">House</h1>
-                  </div>
+                <div class="boostinghouse3">
+                  <h1 class="text-center color2">House</h1>
                 </div>
-                <div class="boostinghouse4">
-                  <h1 class="text-right color1">now</h1>
-                  <div class="divider"></div>
-                </div>
+              </div>
+              <div class="boostinghouse4">
+                <h1 class="text-right color1">now</h1>
+                <div class="divider"></div>
               </div>
             </div>
-            
-            <!--<div class="col-5">
+          </div>
+
+          <!--<div class="col-5">
               <div class="divider"></div>
               <h1 class="text-left">Get your</h1>
             </div>
@@ -97,55 +103,53 @@
               <h1 class="text-right" style="line-height: 20rem;">now</h1>
               <div class="divider"></div>
             </div>-->
-          </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Offerings -->
-    <div id="offerings" class="row offerings text-center">
-      <div class="col-12 title">
-        <h1>Offerings</h1>
-      </div>
-      <div class="col-12 subtitle">
-        <p>Check out now!</p>
-      </div>
-      <div class="content">
-        <div class="row">
-          <div class="col-6">
-            <div class="info text-left">
-              <div class="question">
-                <h1>What is Boosting House?</h1>
-                <p>Are you stuck in your rank? Are you tired of your teammates? You are in the right place! Boosting House offers a service aimed at satisfying your request. You will find professional boosters that can get their jobs done as fast as possible. Check out our social networks for more information.</p>
-              </div>
+  <!-- Offerings -->
+  <div id="offerings" class="row offerings text-center">
+    <div class="col-12 title">
+      <h1>Offerings</h1>
+    </div>
+    <div class="col-12 subtitle">
+      <p>Check out now!</p>
+    </div>
+    <div class="content">
+      <div class="row">
+        <div class="col-md-12 col-lg-6">
+          <div class="info text-left">
+            <div class="question">
+              <h1>What is Boosting House?</h1>
               <div class="divider"></div>
-              <div class="question">
-                <h1>How does boosting work?</h1>
-                <p>When purchasing a boost, a boosting order is created in our system and a professional player employed by our company gets assigned to complete it. To complete the goal of a specific boost, the professional booster will use its experience and skill advantage. </p>
-              </div>
+              <p>Are you stuck in your rank? Are you tired of your teammates? You are in the right place! Boosting House
+                offers a service aimed at satisfying your request. You will find professional boosters that can get
+                their jobs done as fast as possible. Check out our social networks for more information.</p>
             </div>
           </div>
-          <div class="col-1"></div>
-          <div class="col-4">
-            <div class="offers text-left">
-              <h1>Services</h1>
-              <div class="divider"></div>
-              <p>Rank Boosting</p>
-              <p>Win Boosting</p>
-              <p>Tournament Boosting</p>
-              <p>Placements</p>
-              <p>Seasonal Reward Wins</p>
-              <a href="https://discord.gg/k9mc2DkNfy">See more on Discord</a>
-            </div>
-          </div>
-          <div class="col-1"></div>
         </div>
+        <div class="col-1 col-sm-2 col-md-3 col-lg-1"></div>
+        <div class="col-10 col-sm-8 col-md-6 col-lg-4">
+          <div class="offers text-left">
+            <h1>Services</h1>
+            <div class="divider"></div>
+            <p>Rank Boosting</p>
+            <p>Win Boosting</p>
+            <p>Tournament Boosting</p>
+            <p>Placements</p>
+            <p>Seasonal Reward Wins</p>
+            <a href="https://discord.gg/k9mc2DkNfy">See more on Discord</a>
+          </div>
+        </div>
+        <div class="col-1 col-sm-2 col-md-3 col-lg-1"></div>
       </div>
     </div>
+  </div>
 
-    <!-- Create your boost -->
-    <div id="boost" class="boost background">
-      <div class="filter">
+  <!-- Create your boost -->
+  <div id="boost" class="boost background">
+    <div class="filter">
       <div class="row text-center">
         <div class="col-12 title">
           <h1>Create your boost</h1>
@@ -157,9 +161,9 @@
 
       <div class="content">
 
-        <div class="row service">
-          <div class="col-1"></div>
-          <div class="col-2">
+        <div class="row service justify-content-center align-items-center">
+          <div class="col-xl-1"></div>
+          <div class="col-sm-6 col-md-6 col-lg-6 col-xl-2 sectionrank">
             <div id="rankcard" class="card update">
               <img src="./img/cards/rank.png" alt="">
               <div class="body">
@@ -168,7 +172,7 @@
               </div>
             </div>
           </div>
-          <div class="col-2">
+          <div class="col-sm-6 col-md-6 col-lg-6 col-xl-2 sectionwin">
             <div id="wincard" class="card update">
               <img src="./img/cards/win.png" alt="">
               <div class="body">
@@ -177,7 +181,7 @@
               </div>
             </div>
           </div>
-          <div class="col-2">
+          <div class="col-sm-6 col-md-4 col-lg-4 col-xl-2 sectiont">
             <div id="tcard" class="card update">
               <img src="./img/cards/tournament.png" alt="">
               <div class="body">
@@ -186,7 +190,7 @@
               </div>
             </div>
           </div>
-          <div class="col-2">
+          <div class="col-sm-6 col-md-4 col-lg-4 col-xl-2 sectionp">
             <div id="pcard" class="card update">
               <img src="./img/cards/placements.png" alt="">
               <div class="body">
@@ -195,7 +199,7 @@
               </div>
             </div>
           </div>
-          <div class="col-2">
+          <div class="col-sm-12 col-md-4 col-lg-4 col-xl-2 sectionsr">
             <div id="srcard" class="card update">
               <img src="./img/cards/reward.png" alt="">
               <div class="body">
@@ -207,16 +211,15 @@
           <div class="col-1"></div>
         </div>
 
-        <div class="divider"></div>
+        <div id="optionstop" class="divider"></div>
         <div class="row">
-          <div class="col-1"></div>
-          <div class="options col-6">
+          <div class="options col-12 col-xl-6">
             <div id="rank" class="rank option">
               <h1>Rank Boosting</h1>
               <div class="row selection">
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                   <label for="rank1">Current rank</label>
-                  <select id="rank1"class="input form-select currentrank">
+                  <select id="rank1" class="input form-select currentrank">
                     <option class="update" value="0">Bronze I</option>
                     <option class="update" value="1">Bronze II</option>
                     <option class="update" value="2">Bronze III</option>
@@ -240,7 +243,7 @@
                     <option class="update" value="20">Grand Champion III</option>
                   </select>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                   <label for="rank2">Desired rank</label>
                   <select id="rank2" class="input form-select desiredrank">
                     <option class="update" value="1">Bronze II</option>
@@ -266,7 +269,7 @@
                     <option class="update" value="21">Supersonic Legend</option>
                   </select>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                   <label for="rank3">Queue</label>
                   <select id="rank3" class="input form-select queue">
                     <option class="update" value="0">1vs1</option>
@@ -279,7 +282,7 @@
             <div id="win" class="win option">
               <h1>Win Boosting</h1>
               <div class="row selection">
-                <div class="col-4">
+                <div class="col-12 col-sm-4">
                   <label for="win1">Current rank</label>
                   <select id="win1" class="input form-select currentrank">
                     <option class="update" value="0">Bronze I</option>
@@ -306,14 +309,16 @@
                     <option class="update" value="21">Supersonic Legend</option>
                   </select>
                 </div>
-                <div class="col-5">
+                <div class="col-12 col-sm-5">
                   <label class="form-label">Number of wins</label>
                   <form>
-                    <input id="win2input" type="number" class="form-number update" min="0" max="10" name="amountInput" oninput="this.form.amountRange.value=this.value">
-                    <input id="win2range" type="range" class="form-range update" min="0" max="10" name="amountRange" oninput="this.form.amountInput.value=this.value">
+                    <input id="win2input" type="number" class="form-number update" min="0" max="10" name="amountInput"
+                      oninput="this.form.amountRange.value=this.value">
+                    <input id="win2range" type="range" class="form-range update" min="0" max="10" name="amountRange"
+                      oninput="this.form.amountInput.value=this.value">
                   </form>
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-sm-3">
                   <label for="win3">Queue</label>
                   <select id="win3" class="input form-select queue">
                     <option class="update" value="0">1vs1</option>
@@ -326,7 +331,7 @@
             <div id="t" class="t option">
               <h1>Tournament Boosting</h1>
               <div class="row selection">
-                <div class="col-6">
+                <div class="col-12 col-sm-6">
                   <label for="t1">Current rank</label>
                   <select id="t1" class="input form-select currentrank">
                     <option class="update" value="0">Bronze</option>
@@ -339,7 +344,7 @@
                     <option class="update" value="7">Supersonic Legend</option>
                   </select>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-sm-6">
                   <label for="t2">Queue</label>
                   <select id="t2" class="input form-select queue">
                     <option class="update" value="1">2vs2</option>
@@ -351,7 +356,7 @@
             <div id="p" class="p option">
               <h1>Placements</h1>
               <div class="row selection">
-                <div class="col-4">
+                <div class="col-12 col-sm-4">
                   <label for="p1">Current rank</label>
                   <select id="p1" class="input form-select currentrank">
                     <option class="update" value="0">Bronze</option>
@@ -365,14 +370,16 @@
                     <option class="update" value="8">Grand Champion</option>
                   </select>
                 </div>
-                <div class="col-5">
+                <div class="col-12 col-sm-5">
                   <label class="form-label">Number of wins</label>
                   <form>
-                    <input id="p2input" type="number" class="form-number update" min="0" max="10" name="amountInput" value="0" oninput="this.form.amountRange.value=this.value">
-                    <input id="p2range" type="range" class="form-range update" min="0" max="10" name="amountRange" value="0" oninput="this.form.amountInput.value=this.value">
+                    <input id="p2input" type="number" class="form-number update" min="0" max="10" name="amountInput"
+                      value="0" oninput="this.form.amountRange.value=this.value">
+                    <input id="p2range" type="range" class="form-range update" min="0" max="10" name="amountRange"
+                      value="0" oninput="this.form.amountInput.value=this.value">
                   </form>
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-sm-3">
                   <label for="p3">Queue</label>
                   <select id="p3" class="input form-select queue">
                     <option class="update" value="0">1vs1</option>
@@ -385,7 +392,7 @@
             <div id="sr" class="sr option">
               <h1>Seasonal Reward Wins</h1>
               <div class="row selection">
-                <div class="col-4">
+                <div class="col-12 col-sm-4">
                   <label for="sr1">Current rank</label>
                   <select id="sr1" class="input form-select currentrank">
                     <option class="update" value="0">Bronze I</option>
@@ -412,14 +419,16 @@
                     <option class="update" value="21">Supersonic Legend</option>
                   </select>
                 </div>
-                <div class="col-5">
+                <div class="col-12 col-sm-5">
                   <label class="form-label">Number of wins</label>
                   <form>
-                    <input id="sr2input" type="number" class="form-number update" min="0" max="10" name="amountInput" value="0" oninput="this.form.amountRange.value=this.value">
-                    <input id="sr2range" type="range" class="form-range update" min="0" max="10" name="amountRange" value="0" oninput="this.form.amountInput.value=this.value">
+                    <input id="sr2input" type="number" class="form-number update" min="0" max="10" name="amountInput"
+                      value="0" oninput="this.form.amountRange.value=this.value">
+                    <input id="sr2range" type="range" class="form-range update" min="0" max="10" name="amountRange"
+                      value="0" oninput="this.form.amountInput.value=this.value">
                   </form>
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-sm-3">
                   <label for="sr3">Queue</label>
                   <select id="sr3" class="input form-select queue">
                     <option class="update" value="0">1vs1</option>
@@ -429,13 +438,13 @@
                 </div>
               </div>
             </div>
-            <div class="divider" style="margin-top: 2rem;"></div>
+            <div class="divider"></div>
             <div class="row adds">
-              <div class="platform col-5">
-                <div id="pc" class="element">PC</div>
-                <div id="console" class="element">CONSOLE</div>
+              <div class="platform col-12 col-sm-5">
+                <div id="pc" class="element"><span>PC</span></div>
+                <div id="console" class="element"><span>CONSOLE</span></div>
               </div>
-              <div class="playwithbooster col-7">
+              <div class="playwithbooster col-12 col-sm-7">
                 <label class="switch">
                   <input id="pwb" type="checkbox" class="update">
                   <span class="slider round"></span>
@@ -444,7 +453,7 @@
               </div>
             </div>
           </div>
-          <div class="col-3" style="margin-left: 2rem;">
+          <div class="col-12 col-xl-6 checkoutwrapper">
             <div id="checkout" class="checkout">
               <div class="order">
                 <p>YOUR ORDER</p>
@@ -464,9 +473,9 @@
               </div>
             </div>
           </div>
-          <div class="col-1"></div>
         </div>
-        <div id="checkoutmodal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div id="checkoutmodal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+          aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
@@ -477,22 +486,27 @@
               </div>
               <div class="modal-body">
                 <label for="recipient-name" class="col-form-label">Discord name and tag:</label>
-                <input type="text" class="form-control" id="username" placeholder="John#0000" pattern="^.{3,32}#[0-9]{4}$">
+                <input type="text" class="form-control" id="username" placeholder="John#0000"
+                  pattern="^.{3,32}#[0-9]{4}$">
               </div>
               <div class="modal-footer">
-                <button id="checkoutbutton" type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#confirmedmodal">Checkout</button>
+                <button id="checkoutbutton" type="button" class="btn btn-primary" data-dismiss="modal"
+                  data-toggle="modal" data-target="#confirmedmodal">Checkout</button>
               </div>
             </div>
           </div>
         </div>
-        <div id="confirmedmodal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+        <div id="confirmedmodal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle"
+          aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
               <div class="modal-header">
                 <h1 class="modal-title">Checkout Completed!</h1>
               </div>
               <div class="modal-body">
-                <p>Your order is arrived to our boosters. Meanwhile join our Discord Server to simplify the process and speed up the delivery. Delivery time might change based on boosters availability, so from the discord you can track your orded or ask any other question using the specific text channels.</p>
+                <p>Your order is arrived to our boosters. Meanwhile join our Discord Server to simplify the process and
+                  speed up the delivery. Delivery time might change based on boosters availability, so from the discord
+                  you can track your orded or ask any other question using the specific text channels.</p>
               </div>
               <div class="modal-footer">
                 <button class="btn btn-secondary">Join our Discord</button>
@@ -503,33 +517,30 @@
         </div>
       </div>
     </div>
+  </div>
+
+  <!-- About us -->
+  <div id="about" class="row about text-center">
+    <div class="col-12 title">
+      <h1>About us</h1>
     </div>
-
-    <!-- About us -->
-    <div id="about" class="row about text-center">
-      <div class="col-12 title">
-        <h1>About us</h1>
-      </div>
-      <div class="col-12 subtitle">
-        <p>Know your boosters</p>
-      </div>
-      <div class="row">
-        <div class="col-1">
-
-        </div>
-        <div class="col-11">
-          <div class="content row">
-            <div class="col-2">
-              <div class="title">
-                <h1>Meet the team</h1>
-              </div>
+    <div class="col-12 subtitle">
+      <p>Know your boosters</p>
+    </div>
+    <div class="row">
+      <div class="col-12 col-sm-10 col-xl-9 offset-sm-1">
+        <div class="content row">
+          <div class="col-12 col-xl-2">
+            <div class="title">
+              <h1>Meet the team</h1>
             </div>
-            <div class="col-2">
-              <div class="subtitle">
-                <p>Our boosters are selected from the best players out there. We also screen everyone to provide professional performance and attitude, that raise the quality of our service.</p>
-              </div>
+          </div>
+          <div class="col-12 col-xl-10 row">
+            <div class="subtitle col-12">
+              <p>Our boosters are selected from the best players out there. We also screen everyone to provide
+                professional performance and attitude, that raise the quality of our service.</p>
             </div>
-            <div class="col-8">
+            <div class="col-12 teamwrapper">
               <div class="team">
                 <div id="teamSlides" class="carousel slide" data-ride="carousel">
                   <ol class="carousel-indicators">
@@ -567,26 +578,29 @@
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Social -->
-    <div id="social" class="row social">
-      <div class="col-12 title">
-        <h1>Socials</h1>
-      </div>
-      <div class="row content">
-        <div class="col-2"></div>
-        <div class="col-4">
-          <div class="row">
-            <div class="col-12 discord">
-              <div class="wrapper">
-                <div class="title">
-                  <h1>Discord</h1>
-                  <img src="img/logos/discord.png" alt="">
-                </div>
-                <iframe class="discordframe" src="https://discord.com/widget?id=904402519860609064&theme=dark" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>  
+  <!-- Social -->
+  <div id="social" class="row social">
+    <div class="col-12 title">
+      <h1>Socials</h1>
+    </div>
+    <div class="row content">
+      <div class="col-12 col-lg-6 col-xl-4 offset-lg-0 offset-xl-2">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-12 discord">
+            <div class="wrapper">
+              <div class="title">
+                <h1>Discord</h1>
+                <img src="img/logos/discord.png" alt="">
               </div>
+              <iframe class="discordframe" src="https://discord.com/widget?id=904402519860609064&theme=dark"
+                allowtransparency="true" frameborder="0"
+                sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
             </div>
-            <div class="right">
+          </div>
+          <div class="row col-12 col-md-6 col-lg-12 moresocials">
+            <div class="dividerwrapper">
               <div class="divider"></div>
             </div>
             <div class="col-12 twitch">
@@ -617,136 +631,180 @@
               </div>
             </div>
           </div>
+          
         </div>
-        <div class="col-4">
-          <div class="divider"></div>
-          <div class="col-12 instagram">
-            <div class="wrapper">
-              <div class="title">
-                <h1>INSTAGRAM</h1>
-                <img src="img/logos/instagram.png" alt="">
-              </div>
-              <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/CV-eMyqIcGm/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:80%; max-height: 700px; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
-                <div style="padding:16px;">
-                  <a href="https://www.instagram.com/p/CV-eMyqIcGm/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
-                    <div style=" display: flex; flex-direction: row; align-items: center;">
-                      <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div>
-                      <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
-                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div>
-                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div>
+      </div>
+      <div class="col-8 offset-2 col-lg-6 col-xl-4 offset-lg-0">
+        <div class="divider instadivider"></div>
+        <div class="col-12 instagram">
+          <div class="wrapper">
+            <div class="title">
+              <h1>INSTAGRAM</h1>
+              <img src="img/logos/instagram.png" alt="">
+            </div>
+            <blockquote class="instagram-media" data-instgrm-captioned
+              data-instgrm-permalink="https://www.instagram.com/p/CV-eMyqIcGm/?utm_source=ig_embed&amp;utm_campaign=loading"
+              data-instgrm-version="14"
+              style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:80%; max-height: 700px; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+              <div style="padding:16px;">
+                <a href="https://www.instagram.com/p/CV-eMyqIcGm/?utm_source=ig_embed&amp;utm_campaign=loading"
+                  style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                  target="_blank">
+                  <div style=" display: flex; flex-direction: row; align-items: center;">
+                    <div
+                      style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                    </div>
+                    <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                      <div
+                        style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                      </div>
+                      <div
+                        style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
                       </div>
                     </div>
-                    <div style="padding: 19% 0;"></div>
-                    <div style="display:block; height:50px; margin:0 auto 12px; width:50px;">
-                      <svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
-                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                          <g transform="translate(-511.000000, -20.000000)" fill="#000000">
-                            <g>
-                              <path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path>
-                            </g>
+                  </div>
+                  <div style="padding: 19% 0;"></div>
+                  <div style="display:block; height:50px; margin:0 auto 12px; width:50px;">
+                    <svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1"
+                      xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+                      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                          <g>
+                            <path
+                              d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
+                            </path>
                           </g>
                         </g>
-                      </svg>
+                      </g>
+                    </svg>
+                  </div>
+                  <div style="padding-top: 8px;">
+                    <div
+                      style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
+                      Visualizza questo post su Instagram
                     </div>
-                    <div style="padding-top: 8px;">
-                      <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
-                        Visualizza questo post su Instagram
+                  </div>
+                  <div style="padding: 12.5% 0;">
+                  </div>
+                  <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                    <div>
+                      <div
+                        style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
+                      </div>
+                      <div
+                        style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
+                      </div>
+                      <div
+                        style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
                       </div>
                     </div>
-                    <div style="padding: 12.5% 0;">
-                    </div>
-                    <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div>
-                      <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div>
-                      <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div>
-                      <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div>
-                    </div>
                     <div style="margin-left: 8px;">
-                      <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div>
-                      <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div>
+                      <div
+                        style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
+                      </div>
+                      <div
+                        style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
+                      </div>
                     </div>
                     <div style="margin-left: auto;">
-                      <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div>
-                      <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div>
-                      <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div>
+                      <div
+                        style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
+                      </div>
+                      <div
+                        style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
+                      </div>
+                      <div
+                        style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
+                      </div>
                     </div>
                   </div>
-                  <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
-                    <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div>
-                    <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div>
+                  <div
+                    style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                    <div
+                      style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;">
+                    </div>
+                    <div
+                      style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;">
+                    </div>
                   </div>
                 </a>
-                <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
-                  <a href="https://www.instagram.com/p/CV-eMyqIcGm/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">
+                <p
+                  style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                  <a href="https://www.instagram.com/p/CV-eMyqIcGm/?utm_source=ig_embed&amp;utm_campaign=loading"
+                    style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
+                    target="_blank">
                     Un post condiviso da BoostingHouse (@boosting_house)
                   </a>
                 </p>
               </div>
             </blockquote>
-            </div>
           </div>
         </div>
-        <div class="col-2"></div>
       </div>
     </div>
+  </div>
 
-    <!-- Contact -->
-    <div id="contact" class="row contact">
-      <div class="col-12 title">
-        <h1>Contact</h1>
+  <!-- Contact -->
+  <div id="contact" class="row contact">
+    <div class="col-12 title">
+      <h1>Contact</h1>
+    </div>
+    <div class="content row">
+      <div class="col-12 col-sm-10 offset-sm-1">
+        <div class="title">
+          <h1>Write us</h1>
+          <img src="img/logos/message.jpg">
+        </div>
+        <form class="row">
+          <div class="col-12">
+            <div class="form-group">
+              <label for="name" class="col-form-label">Email or Discord username:</label>
+              <input type="text" id="name" class="form-control">
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-group">
+              <label for="message" class="col-form-label">Message:</label>
+              <textarea id="message" cols="30" rows="10" class="form-control" style="resize: none;"></textarea>
+            </div>
+          </div>
+        </form>
+        <div class="submit">
+          <div class="button">
+            <h1>Send message</h1>
+          </div>
+        </div>
       </div>
+    </div>
+  </div>
+
+  <!-- Page trail -->
+  <div id="sitetrail" class="row sitetrail">
+    <div class="col-12">
       <div class="content row">
-        <div class="col-1"></div>
-        <div class="col-10">
-          <div class="title">
-            <h1>Write us</h1>
-            <img src="img/logos/message.jpg">
-          </div>
-          <form class="row">
-            <div class="col-12">
-              <div class="form-group">
-                <label for="name" class="col-form-label">Email or Discord username:</label>
-                <input type="text" id="name" class="form-control">
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="form-group">
-                <label for="message" class="col-form-label">Message:</label>
-                <textarea id="message" cols="30" rows="10" class="form-control" style="resize: none;"></textarea>
-              </div>
-            </div>
-          </form>
-          <div class="submit">
-            <div class="button">
-              <h1>Send message</h1>
-            </div>
-          </div>
-        </div>
-        <div class="col-1"></div>
-      </div>
-    </div>
-
-    <!-- Page trail -->
-    <div id="sitetrail" class="row sitetrail">
-      <div class="col-2">
-        <div class="website">boostinghouse.com</div>
-      </div>
-      <div class="col-8">
-        <div class="content row">
+        <div class="col-12 wrapper">
           <div class="col-12 text-center">
             <img src="./img/Logo_bh.png" alt="brand">
           </div>
           <div class="col-12 text-center">
-            <a href="mailto:BoostingHouseService@gmail.com">BoostingHouseService@gmail.com</a>
+            boostinghouse.eu
           </div>
         </div>
       </div>
-      <div class="col-2">
+    </div>
+    <div class="col-12 row justify-content-between">
+      <div class="col-3">
+        <div class="website"><a href="mailto:BoostingHouseService@gmail.com">BoostingHouse<span>Service@gmail.com</span></a></div>
+      </div>
+      <div class="col-3">
         <div class="reference">Website made by <a href="https://alessandropilleri.github.io/">Alessandro Pilleri</a></div>
       </div>
     </div>
+  </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"></script>
-    <script async src="//www.instagram.com/embed.js"></script>
-    <script src="js/script.js" defer></script>
-  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"></script>
+  <script async src="//www.instagram.com/embed.js"></script>
+  <script src="js/script.js" defer></script>
+</body>
+
 </html>

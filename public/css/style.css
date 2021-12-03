@@ -55,6 +55,9 @@ a:active {
   font-size: 6rem;
   letter-spacing: 2px;
 }
+.video-container {
+  overflow: hidden;
+}
 #video {
   position: absolute;
   top: 0;
@@ -63,7 +66,6 @@ a:active {
   padding: 0;
   min-width: 100%;
   min-height: 100%;
-  overflow: hidden;
   z-index: -1;
 }
 .navbar {
@@ -104,23 +106,6 @@ a:active {
 }
 .websitetitle {
   width: 90%;
-}
-#home .title {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  font-size: 20rem;
-  letter-spacing: 2px;
-  line-height: 30vh;
-  margin: 0;
-  mix-blend-mode: screen;
-  color: rgba(0, 0, 0, 1);
-  background: rgba(50, 50, 50, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 #home {
   font-family: 'GoGoPosterPunch';
@@ -200,12 +185,18 @@ a:active {
 .offerings .content .row {
   padding-top: 2rem;
 }
+.offerings .content .info {
+  padding-top: 2rem;
+  padding-left: 2rem;
+}
 .offerings .content .info h1 {
   padding-left: 3rem;
+  font-size: 3rem;
 }
 .offerings .content .info p {
   color: #d1d1d1;
   padding-left: 5rem;
+  font-size: 1.1rem;
 }
 .offerings .offers h1 {
   margin-left: 1rem;
@@ -282,6 +273,8 @@ a:active {
   background-color: rgba(50, 50, 50, 0.9);
   border-radius: 50px 10px;
   border-color: #d1d1d1;
+  min-width: 700px;
+  margin-left: 5rem;
 }
 .option h1 {
   color: white;
@@ -305,6 +298,11 @@ a:active {
 .boost .content {
   padding-top: 4rem;
   padding-bottom: 5rem;
+}
+.sectionrank, .sectionwin, .sectiont, .sectionp, .sectionsr {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3.5rem;
 }
 .card {
   width: 180px;
@@ -337,19 +335,22 @@ a:active {
 }
 .selection {
   padding-top: 1rem;
+  width: 100%;
 }
 .options {
   padding-top: 1rem;
   padding-bottom: 5rem;
 }
 .adds {
+  position: absolute;
+  bottom: -1.5rem;
+  right: 0;
   margin-top: 2rem;
-  width: 60%;
   padding: 2rem;
   background-color: rgba(50, 50, 50, 0.9);
   border-radius: 50px 10px;
-  margin-left: 20rem;
   border-color: #d1d1d1;
+  width: 500px;
 }
 .platform {
   display: flex;
@@ -361,14 +362,21 @@ a:active {
   border: 5px solid white;
   color: white;
   margin-right: 0.5rem;
+  height: 50px;
 }
 .playwithbooster {
+  padding-left: 2rem;
   display: flex;
+  justify-content: center;
 }
 .playwithbooster p {
   margin-top: 0.2rem;
   margin-left: 1rem;
   color: white;
+}
+.checkoutwrapper {
+  display: flex;
+  justify-content: end;
 }
 .checkout {
   background-color: #323232;
@@ -376,6 +384,9 @@ a:active {
   border: 3px solid white;
   border-color: #14FFEC;
   padding: 1rem;
+  min-width: 350px;
+  width: 50%;
+  margin-right: 15rem;
 }
 .checkout .order {
   padding: 1rem;
@@ -430,6 +441,7 @@ a:active {
  background-color: #ccc;
  -webkit-transition: .4s;
  transition: .4s;
+ width: 60px;
 }
 .slider:before {
  position: absolute;
@@ -529,13 +541,13 @@ input[type="range"]::-webkit-slider-thumb {
   padding-bottom: 1rem;
 }
 .about .content {
-  width: 90%;
+  width: 100%;
   background-color: rgba(50, 50, 50, 0.2);
   padding: 2rem;
   border-radius: 50px 10px;
 }
 .about .content .title {
-  padding-top: 2rem;
+  padding-top: 5rem;
   text-align: right;
 }
 .about .content .title h1 {
@@ -548,19 +560,21 @@ input[type="range"]::-webkit-slider-thumb {
 }
 .team {
   padding: 2rem;
-  padding-left: 0rem;
+  padding-top: 0;
 }
 .carousel {
-  width: 60rem;
+  width: 950px;
 }
 .carousel-inner {
   background: black;
   border: 5px solid white;
   border-radius: 50px 10px;
-  width: 60rem;
+  width: 950px;
 }
 .carousel-item img {
-  height: 30rem;
+  width: 100%;
+  max-width: 950px;
+  height: auto;
   filter: blur(1px);
   -webkit-filter: blur(1px);
   opacity: 0.6;
@@ -576,6 +590,7 @@ input[type="range"]::-webkit-slider-thumb {
 .social .content .title {
   padding-bottom: 2rem;
   display: flex;
+  justify-content: end;
 }
 .social h1 {
   font-size: 4rem;
@@ -591,9 +606,8 @@ input[type="range"]::-webkit-slider-thumb {
   padding-bottom: 2rem;
 }
 .social .content .title h1 {
-  text-align: left;
+  text-align: right;
   font-size: 2.5rem;
-  padding-left: 5rem;
 }
 .social .content .subtitle p {
   text-align: left;
@@ -604,6 +618,7 @@ input[type="range"]::-webkit-slider-thumb {
   background-color: #0D7377;
   border: 2px solid white;
   border-radius: 50px 10px;
+  display: inline-block;
 }
 .social .divider {
   margin-top: 2rem;
@@ -612,15 +627,14 @@ input[type="range"]::-webkit-slider-thumb {
   width: 80%;
   height: 20px;
 }
-.social .right {
+.social .dividerwrapper {
   width: 100%;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
 }
 .discordframe {
-  width: 100%;
-  min-width: 300px;
+  width: 400px;
   height: 400px;
 }
 .social .tiktok, .social .twitch, .social .email {
@@ -628,8 +642,9 @@ input[type="range"]::-webkit-slider-thumb {
   justify-content: flex-end;
   padding-bottom: 1rem;
 }
-.social .tiktok .wrapper {
-  display: inline-block;
+.discord {
+  display: flex;
+  justify-content: end;
 }
 .social .tiktok .title {
   padding-bottom: 0;
@@ -778,4 +793,6 @@ input[type="range"]::-webkit-slider-thumb {
   right: 16px;
   font-size: 1rem;
   color: #ccc;
+  text-align: right;
+  width: 100%;
 }

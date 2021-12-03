@@ -347,6 +347,15 @@ $(".update").click(() => {
 $("select").on('change', () => {
   calculatePrice();
 })
+$(".currentrank").on('change', (event) => {
+  if (modality == 0) {
+    $('#rank2 option')
+      .removeAttr('selected')
+      .filter('[value=' + (parseInt(event.target.value) + 1) +']')
+      .attr('selected', true);
+  }
+  calculatePrice();
+})
 
 // Check when queue is 1v1
 $(".queue").on('change', (event) => {
