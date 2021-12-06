@@ -7,7 +7,7 @@ class Message {
     parseMessage(json) {
         var output = "```";
         output += "Username: " + json.username;
-        output += "Message: " + json.message;
+        output += "\nMessage: " + json.message;
         output += "```";
         return output;
     }
