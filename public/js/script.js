@@ -73,10 +73,10 @@ maps[0].set('14', 30); // Diamond 3
 maps[0].set('15', 35); // Champ 1
 maps[0].set('16', 40); // Champ 2
 maps[0].set('17', 45); // Champ 3
-maps[0].set('18', 50); // GC 1
-maps[0].set('19', 55); // GC 2
-maps[0].set('20', 70); // GC 3
-maps[0].set('21', 100); // SSL
+maps[0].set('18', 55); // GC 1
+maps[0].set('19', 65); // GC 2
+maps[0].set('20', 80); // GC 3
+maps[0].set('21', 115); // SSL
 
 maps[1].set('0', 1); // Bronze 1
 maps[1].set('1', 1); // Bronze 2
