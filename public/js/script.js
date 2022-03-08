@@ -291,8 +291,8 @@ function calculatePrice() {
 
   // Price
   if (playwithbooster == true && queue != 0) {
-    console.log("pwb = " + (price * 10 / 100))
-    price += price * 10 / 100;
+    console.log("pwb = " + (price * 50 / 100))
+    price += price * 50 / 100;
   }
   
   (Math.round(price * 100) / 100).toFixed(2); // 2 dec format

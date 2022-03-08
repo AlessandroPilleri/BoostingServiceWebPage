@@ -7,8 +7,7 @@ class Checkout {
      *  - 0: rank boosting
      *  - 1: win boosting
      *  - 2: tournament boosting
-     *  - 3: placements
-     *  - 4: seasonal reward wins
+     *  - 3: seasonal reward wins
      * 
      * RANKS:
      * maps[0] < rank, price >
@@ -60,10 +59,10 @@ class Checkout {
             ['15', 35],
             ['16', 40],
             ['17', 45],
-            ['18', 50],
-            ['19', 55],
-            ['20', 70],
-            ['21', 100]
+            ['18', 55],
+            ['19', 65],
+            ['20', 80],
+            ['21', 115]
         ]);
         this.maps[1] = new Map([
             ['0', 1],
@@ -100,39 +99,14 @@ class Checkout {
             ['7', 50]
         ]);
         this.maps[3] = new Map([
-            ['0', 1],
-            ['1', 2],
-            ['2', 2],
-            ['3', 3],
-            ['4', 3],
-            ['5', 4],
-            ['6', 4],
-            ['7', 4],
-            ['8', 6]
-        ]);
-        this.maps[4] = new Map([
-            ['0', 1], // Bronze 1
-            ['1', 1], // Bronze 2
-            ['2', 1], // Bronze 3
-            ['3', 2], // Silver 1
-            ['4', 2], // Silver 2
-            ['5', 2], // Silver 3
-            ['6', 3], // Gold 1
-            ['7', 3], // Gold 2
-            ['8', 3], // Gold 3
-            ['9', 4], // Plat 1
-            ['10', 4], // Plat 2
-            ['11', 4], // Plat 3
-            ['12', 4], // Diamond 1
-            ['13', 4], // Diamond 2
-            ['14', 4], // Diamond 3
-            ['15', 5], // Champ 1
-            ['16', 5], // Champ 2
-            ['17', 5], // Champ 3
-            ['18', 6], // GC 1
-            ['19', 6], // GC 2
-            ['20', 8], // GC 3
-            ['21', 10], // SSL
+            ['0', 10],
+            ['1', 10],
+            ['2', 10],
+            ['3', 10],
+            ['4', 10],
+            ['5', 10],
+            ['6', 20],
+            ['7', 30]
         ]);
         this.parseMaps = []
         this.parseMaps[0] = [
@@ -274,7 +248,7 @@ class Checkout {
           price = (desiredrank - currentrank) + adds;
         }
       
-        if (json.modality == 1 || json.modality == 3 || json.modality == 4) { // Win boosting / Placements / Seasonal Reward
+        if (json.modality == 1 || json.modality == 3) { // Win boosting  / Seasonal Reward
           // Current rank price
           var currentrank = this.maps[json.modality].get(json.currentrank);
       
@@ -303,8 +277,8 @@ class Checkout {
         
         // Price
         if (json.playwithbooster == true) {
-          console.log("pwb = " + (price * 40 / 100))
-          price += price * 40 / 100;
+          console.log("pwb = " + (price * 50 / 100))
+          price += price * 50 / 100;
         }
         
         console.log(price);
